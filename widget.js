@@ -2965,7 +2965,7 @@ cpdefine('inline:com-chilipeppr-widget-3dviewer', ['chilipeppr_ready', 'Three', 
                                 //if (args.feedrate 
                             }
                             
-                            //console.log("about to call handler. args:", args, "info:", info, "this:", this);
+                            console.log("about to call handler. args:", args, "info:", info, "this:", this);
                             
                             return handler(args, info, this);
                         } else {
