@@ -2357,7 +2357,7 @@ cpdefine('inline:com-chilipeppr-widget-3dviewer', ['chilipeppr_ready', 'Three', 
             //     logarithmicDepthBuffer: false
             // });
             
-            var webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
+            var webgl = ( function () { try { return !! window.WebGLRenderingContext || !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
 
             if (webgl) {
                 console.log('WebGL Support found!  Success: CP will work optimally on this device!');
